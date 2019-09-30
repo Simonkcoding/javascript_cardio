@@ -20,7 +20,12 @@ const reverseString = (str) => {
 console.log(reverseString("hello"));
 
 // 2. Validate Palindromes
+const isPalindrome = (str) => {
+const revStr = str.split("").reverse().join("");
+return str === revStr;
+}
 
+console.log(isPalindrome("racecar"));
 
 // 3. Integer Reversal
 
