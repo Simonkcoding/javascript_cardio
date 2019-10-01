@@ -70,10 +70,10 @@ const maxChar = (str) => {
     let maxNum = 0;
     let maxChar = "";
 
-    for (let char in charMap){
-        if (charMap[char]>maxNum){
-          maxNum=charMap[char];
-          maxChar = char;
+    for (let char in charMap) {
+        if (charMap[char] > maxNum) {
+            maxNum = charMap[char];
+            maxChar = char;
         };
     };
     return maxChar;
@@ -82,12 +82,12 @@ console.log(maxChar("javatjjjjj"));
 
 // 6. FizzBuzz Challenge
 const fizzBuzz = (int) => {
-    for (let i=1;i<=int; i++){
-        if (i%3===0&&i%5===0){
+    for (let i = 1; i <= int; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
             console.log("FizzBuzz");
-        } else if (i%3===0){
+        } else if (i % 3 === 0) {
             console.log("Fizz");
-        } else if (i%5===0){
+        } else if (i % 5 === 0) {
             console.log("Buzz");
         } else {
             console.log(i);
